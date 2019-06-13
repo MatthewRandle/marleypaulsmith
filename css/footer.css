@@ -1,0 +1,40 @@
+.footer_container {
+  background-color: #314070;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 140px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 125px;
+  width: 1000px;
+}
+
+footer img {
+  width: 130px;
+}
+
+.facebook_logo {
+  width: 75px;
+}
+
+footer a {
+  margin-left: 30px;
+  font-family: "Roboto Slab";
+  color: white;
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=footer.css.map */

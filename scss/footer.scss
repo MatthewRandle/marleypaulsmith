@@ -1,0 +1,31 @@
+@import "_variables";
+
+.footer_container {
+    background-color: $blue;
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 125px;
+    width: 1000px;    
+}
+
+footer img {
+    width: 130px;
+}
+
+.facebook_logo {
+    width: 75px;
+}
+
+footer a {
+    margin-left: 30px;
+    font-family: "Roboto Slab";
+    color: white;
+    font-size: 0.8rem;
+}

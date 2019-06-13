@@ -1,0 +1,417 @@
+.jumbotron_container {
+  background-image: url("../images/jumbotron.jpg");
+  border-bottom: 1px solid gray;
+  height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .jumbotron_container {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .jumbotron_container {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .jumbotron_container {
+    height: 300px;
+  }
+}
+
+.jumbotron_container p {
+  cursor: pointer;
+  background-color: rgba(33, 42, 74, 0.75);
+  padding: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-size: 1.5rem;
+  font-family: "Roboto Slab";
+  color: white;
+}
+
+.jumbotron_container p:hover {
+  background-color: #212a4a;
+}
+
+.content_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content {
+  width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .content {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    width: 90%;
+  }
+}
+
+.whatWeDo {
+  width: 100%;
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .whatWeDo {
+    width: 100%;
+  }
+}
+
+.whatWeDo h2 {
+  color: #212a4a;
+  font-family: "Roboto Slab";
+  margin-bottom: 10px;
+}
+
+.whatWeDo p {
+  line-height: 1.3em;
+}
+
+.banner_logo {
+  position: relative;
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+}
+
+@media only screen and (max-width: 1200px) {
+  .banner_logo {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 100px solid #314070;
+  position: relative;
+}
+
+.triangle p {
+  position: absolute;
+  left: 43%;
+  top: 65px;
+  -webkit-transform: translateX(-39%);
+          transform: translateX(-39%);
+  width: 200px;
+  color: white;
+  font-family: "Roboto Slab";
+  font-size: 0.9rem;
+}
+
+.line {
+  width: 300px;
+  height: 5px;
+  background: #314070;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.chimney {
+  position: absolute;
+  top: -20px;
+  right: 0;
+}
+
+.chimney_square {
+  width: 30px;
+  height: 30px;
+  background: #314070;
+}
+
+.chimney_triangle {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 20px solid #314070;
+}
+
+.banner_container {
+  background: #314070;
+  height: 120px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner {
+  width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-family: "Roboto Slab";
+  font-size: 0.75rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .banner {
+    width: 70%;
+  }
+}
+
+.banner_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner_item p {
+  margin-top: 10px;
+}
+
+.banner_item h2 {
+  font-size: 2.5rem;
+}
+
+.roofing_photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 140px;
+  width: 100%;
+}
+
+.roofing_photos img {
+  width: 250px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  -webkit-box-shadow: 0 2px 5px rgba(154, 160, 185, 0.05), 0 3px 10px rgba(166, 173, 201, 0.2);
+          box-shadow: 0 2px 5px rgba(154, 160, 185, 0.05), 0 3px 10px rgba(166, 173, 201, 0.2);
+}
+
+@media only screen and (max-width: 1200px) {
+  .roofing_photos img {
+    width: 27vw;
+  }
+}
+
+.roofing_para {
+  margin-top: 75px;
+  line-height: 1.3em;
+}
+
+.trading_counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 140px;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+.trading_header {
+  font-size: 2rem;
+  color: #212a4a;
+  font-family: "Roboto Slab";
+}
+
+.trading_photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.trading_photos img {
+  width: 250px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  -webkit-box-shadow: 0 2px 5px rgba(154, 160, 185, 0.05), 0 3px 10px rgba(166, 173, 201, 0.2);
+          box-shadow: 0 2px 5px rgba(154, 160, 185, 0.05), 0 3px 10px rgba(166, 173, 201, 0.2);
+}
+
+@media only screen and (max-width: 1200px) {
+  .trading_photos img {
+    width: 25vw;
+  }
+}
+
+#testimonials {
+  margin-top: 140px;
+  margin-bottom: 140px;
+  width: 85%;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.005);
+  font-family: "Roboto Slab";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  color: #212a4a;
+  -webkit-box-shadow: 0 2px 5px rgba(154, 160, 185, 0.05), 0 7px 20px rgba(166, 173, 201, 0.2);
+          box-shadow: 0 2px 5px rgba(154, 160, 185, 0.05), 0 7px 20px rgba(166, 173, 201, 0.2);
+  list-style-type: none;
+  padding: 40px;
+}
+
+.testimonial {
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.testimonial h2 {
+  margin-bottom: 20px;
+}
+
+.showing {
+  opacity: 1;
+  z-index: 2;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.testimonials p {
+  margin-top: 30px;
+}
+
+.form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-family: "Roboto Slab";
+  color: #212a4a;
+}
+
+.form label {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.form input,
+.form textarea {
+  border: 2px solid rgba(128, 128, 128, 0.4);
+}
+
+input[name="name"],
+input[name="phone"],
+input[name="email"] {
+  width: 350px;
+  padding: 5px;
+}
+
+.form textarea {
+  width: 800px;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .form textarea {
+    width: 95%;
+  }
+}
+
+button {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-family: "Roboto Slab";
+  color: white;
+  background-color: #212a4a;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #314070;
+}
+/*# sourceMappingURL=index.css.map */
