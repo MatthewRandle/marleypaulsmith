@@ -7,6 +7,8 @@
         <link rel="stylesheet" type="text/css" href="./css/footer.css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
         <script src="https://kit.fontawesome.com/55ce7a4948.js"></script>
 
         <title>Paul Marley Smith Roofing</title>
@@ -19,16 +21,16 @@
             <div class="navbar_topBar_container">
                 <div class="navbar_topBar">
                     <p><i class="fas fa-phone-alt" style="padding-right: 5px; margin-left: 20px;"></i> 01670 828688</p>
-                    <p><i class="far fa-envelope" style="margin-right: 5px;"></i> enquiry@paulmaryleysmith.co.uk</p>
+                    <p><i class="far fa-envelope" style="margin-right: 5px;"></i> info@paulmaryleysmith.co.uk</p>
                 </div>
             </div>
 
             <div class="navbar">
-                <a class="navbar_logo" href="/index.html"><img src="images/logo.png" alt="Logo" /></a>
+                <a class="navbar_logo" href="/index.html" rel="noopener noreferrer"><img src="images/logo.png" alt="Logo" /></a>
                 <div style="display: flex;">
-                    <a href="./index.html">Home</a>
-                    <a href="./Supplies.html">Supplies</a>
-                    <a href="./Gallery.html">Gallery</a>
+                    <a href="./index.html" rel="noopener noreferrer">Home</a>
+                    <a href="./Supplies.html" rel="noopener noreferrer">Supplies</a>
+                    <a href="./Gallery.html" rel="noopener noreferrer">Gallery</a>
                 </div>
             </div>
         </div>    
@@ -62,7 +64,7 @@
             <div class="banner_container">
                 <div class="banner">
                     <div class="banner_item">
-                        <img src="./images/tiles.png" alt="Roof tiles" style="width: 100px;">
+                        <img src="./images/tiles.png" alt="Roof tiles">
                         <p>roofing services</p>
                     </div>
                 
@@ -91,21 +93,23 @@
                     commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
                 
                 <div class="trading_counter" data-aos="fade-up" data-aos-once="true">
-                    <h2 class="trading_header">Trading Counter</h2>
+                    <h2 class="trading_header">Trade Counter</h2>
                     <p>hi</p>
                 </div>
 
                 <div class="trading_photos">
-                    <img src="./images/supplies-01.jpg" alt="" data-aos="fade-up" data-aos-once="true">
-                    <img src="./images/supplies-02.jpg" alt="" data-aos="fade-up" data-aos-once="true">
-                    <img src="./images/supplies-03.jpg" alt="" data-aos="fade-up" data-aos-once="true">
-                    <img src="./images/supplies-04.jpg" alt="" data-aos="fade-up" data-aos-once="true">
-                    <img src="./images/supplies-05.jpg" alt="" data-aos="fade-up" data-aos-once="true">
-                    <img src="./images/supplies-06.jpg" alt="" data-aos="fade-up" data-aos-once="true">
-                    <img src="./images/supplies-07.jpg" alt="" data-aos="fade-up" data-aos-once="true">
-                    <img src="./images/supplies-08.jpg" alt="" data-aos="fade-up" data-aos-once="true">
-                    <img src="./images/supplies-09.jpg" alt="" data-aos="fade-up" data-aos-once="true">
+                    <img src="./images/supplies-01.jpg" alt="Photo of a yard with supplies" data-aos="fade-up" data-aos-once="true">
+                    <img src="./images/supplies-02.jpg" alt="Photo of trading counter" data-aos="fade-up" data-aos-once="true">
+                    <img src="./images/supplies-03.jpg" alt="Photo of supplies" data-aos="fade-up" data-aos-once="true">
+                    <img src="./images/supplies-04.jpg" alt="Photo of a yard with supplies" data-aos="fade-up" data-aos-once="true">
+                    <img src="./images/supplies-05.jpg" alt="Photo of supplies" data-aos="fade-up" data-aos-once="true">
+                    <img src="./images/supplies-06.jpg" alt="Photo of supplies" data-aos="fade-up" data-aos-once="true">
+                    <img src="./images/supplies-07.jpg" alt="Photo of supplies" data-aos="fade-up" data-aos-once="true">
+                    <img src="./images/supplies-08.jpg" alt="Photo of supplies" data-aos="fade-up" data-aos-once="true">
+                    <img src="./images/supplies-09.jpg" alt="Photo of supplies" data-aos="fade-up" data-aos-once="true">
                 </div>
+
+                <a class="trading_button" href="./Supplies.html" rel="noopener noreferrer" data-aos="fade-up" data-aos-once="true">View All Supplies</a>
 
                 <div id="testimonials" data-aos="fade-up" data-aos-once="true">
                     <div class="testimonial showing" style="text-align: center;">
@@ -124,22 +128,19 @@
                     </div>
                 </div>
 
-                <form action="mailto:randle.matthew@hotmail.co.uk?subject=Email Subject&body=Contents of email"" class="form">
+                <form action="sendMessage.php" method="POST" class="form">
                     <h2 data-aos="fade-up" data-aos-once="true">Get in contact with us</h2>
 
-                    <label for="name" data-aos="fade-up" data-aos-once="true">Name*</label>
+                    <label for="name" data-aos="fade-up" data-aos-once="true">Name</label>
                     <input type="text" name="name" required data-aos="fade-up" data-aos-once="true">
 
-                    <label for="email" data-aos="fade-up" data-aos-once="true">Email*</label>
+                    <label for="email" data-aos="fade-up" data-aos-once="true">Email</label>
                     <input type="email" name="email" required data-aos="fade-up" data-aos-once="true">
 
-                    <label for="phone" data-aos="fade-up" data-aos-once="true">Phone Number</label>
-                    <input type="tel" name="phone" data-aos="fade-up" data-aos-once="true">
+                    <label for="message" data-aos="fade-up" data-aos-once="true">Your Message</label>
+                    <textarea type="text" name="message" rows="8" required data-aos="fade-up" data-aos-once="true"></textarea>
 
-                    <label for="message" data-aos="fade-up" data-aos-once="true">Your Message*</label>
-                    <textarea type="text" name="message" rows="5" required data-aos="fade-up" data-aos-once="true"></textarea>
-
-                    <button data-aos="fade-up" data-aos-once="true">Send Message</button>
+                    <button type="submit" name="submit" data-aos="fade-up" data-aos-once="true">Send Message</button>
                 </form>
             </div>
         </div>
@@ -147,15 +148,16 @@
         <div class="footer_container">
             <footer>
                 <img src="images/logo.png" alt="Logo" />
-                <div style="display: flex; align-items: center;">                    
-                    <a href="./index.html">Home</a>
-                    <a href="./Supplies.html">Supplies</a>
-                    <a href="./Gallery.html">Gallery</a>
+                <div class="footer_links">                    
+                    <div>
+                        <a rel="noopener noreferrer" href="./index.html">Home</a>
+                        <a rel="noopener noreferrer" href="./Supplies.html">Supplies</a>
+                        <a rel="noopener noreferrer" href="./Gallery.html">Gallery</a>
+                    </div>
                     <a href="https://www.facebook.com/marleypaulsmithroofing/?epa=SEARCH_BOX" rel="noopener noreferrer" target="_blank">
                         <img class="facebook_logo" src="images/f_logo_RGB-White_250.png" alt="Facebook Logo">
                     </a>
-                </div>
-                
+                </div>                
             </footer>
         </div>
 

@@ -9,6 +9,12 @@
   margin-top: 140px;
 }
 
+@media only screen and (max-width: 768px) {
+  .footer_container {
+    margin-top: 100px;
+  }
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,6 +27,8 @@ footer {
           justify-content: space-between;
   height: 125px;
   width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 footer img {
@@ -31,10 +39,51 @@ footer img {
   width: 75px;
 }
 
+@media only screen and (max-width: 480px) {
+  .facebook_logo {
+    width: 50px;
+  }
+}
+
 footer a {
   margin-left: 30px;
   font-family: "Roboto Slab";
   color: white;
   font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 480px) {
+  footer a {
+    font-size: 0.6rem;
+    margin-left: 10px;
+  }
+}
+
+.footer_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer_links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .footer_links {
+    height: 60%;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

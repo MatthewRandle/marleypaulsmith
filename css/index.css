@@ -97,6 +97,13 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .whatWeDo {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
 .whatWeDo h2 {
   color: #212a4a;
   font-family: "Roboto Slab";
@@ -120,6 +127,20 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .banner_logo {
+    -webkit-transform: translateX(-125px);
+            transform: translateX(-125px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .banner_logo {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+
 .triangle {
   width: 0;
   height: 0;
@@ -127,6 +148,14 @@
   border-right: 150px solid transparent;
   border-bottom: 100px solid #314070;
   position: relative;
+}
+
+@media only screen and (max-width: 480px) {
+  .triangle {
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 50px solid #314070;
+  }
 }
 
 .triangle p {
@@ -141,6 +170,15 @@
   font-size: 0.9rem;
 }
 
+@media only screen and (max-width: 480px) {
+  .triangle p {
+    font-size: 0.6rem;
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+    top: 35px;
+  }
+}
+
 .line {
   width: 300px;
   height: 5px;
@@ -150,10 +188,22 @@
   left: 50%;
 }
 
+@media only screen and (max-width: 480px) {
+  .line {
+    width: 200px;
+  }
+}
+
 .chimney {
   position: absolute;
   top: -20px;
   right: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  .chimney {
+    top: -10px;
+  }
 }
 
 .chimney_square {
@@ -162,12 +212,26 @@
   background: #314070;
 }
 
+@media only screen and (max-width: 480px) {
+  .chimney_square {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 .chimney_triangle {
   width: 0;
   height: 0;
   border-left: 30px solid transparent;
   border-right: 0px solid transparent;
   border-top: 20px solid #314070;
+}
+
+@media only screen and (max-width: 480px) {
+  .chimney_triangle {
+    border-left: 20px solid transparent;
+    border-top: 10px solid #314070;
+  }
 }
 
 .banner_container {
@@ -180,6 +244,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .banner_container {
+    height: 85px;
+  }
 }
 
 .banner {
@@ -204,6 +274,18 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .banner {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .banner {
+    width: 95%;
+  }
+}
+
 .banner_item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -217,12 +299,42 @@
           align-items: center;
 }
 
+.banner_item img {
+  width: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner_item img {
+    width: 75px;
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .banner_item img {
+    width: 60px;
+    margin-bottom: 2px;
+  }
+}
+
 .banner_item p {
   margin-top: 10px;
 }
 
+@media only screen and (max-width: 480px) {
+  .banner_item p {
+    font-size: 0.6rem;
+  }
+}
+
 .banner_item h2 {
   font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .banner_item h2 {
+    font-size: 2rem;
+  }
 }
 
 .roofing_photos {
@@ -234,6 +346,22 @@
           justify-content: space-between;
   margin-top: 140px;
   width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .roofing_photos {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .roofing_photos {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .roofing_photos img {
@@ -249,9 +377,29 @@
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .roofing_photos img {
+    width: 100%;
+    height: 113.333vw;
+    margin-bottom: 40px;
+  }
+}
+
 .roofing_para {
   margin-top: 75px;
   line-height: 1.3em;
+}
+
+@media only screen and (max-width: 768px) {
+  .roofing_para {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .roofing_para {
+    margin-top: 20px;
+  }
 }
 
 .trading_counter {
@@ -267,6 +415,19 @@
   margin-top: 140px;
   margin-bottom: 100px;
   width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .trading_counter {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .trading_counter {
+    margin-bottom: 50px;
+  }
 }
 
 .trading_header {
@@ -286,6 +447,14 @@
       flex-wrap: wrap;
 }
 
+@media only screen and (max-width: 480px) {
+  .trading_photos {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .trading_photos img {
   width: 250px;
   margin-bottom: 30px;
@@ -297,6 +466,58 @@
 @media only screen and (max-width: 1200px) {
   .trading_photos img {
     width: 25vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .trading_photos img {
+    width: 43vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .trading_photos img:last-child {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .trading_photos img {
+    width: 100%;
+    height: 68vw;
+    display: none;
+  }
+  .trading_photos img:nth-child(1) {
+    display: inline;
+  }
+  .trading_photos img:nth-child(2) {
+    display: inline;
+  }
+  .trading_photos img:nth-child(3) {
+    display: inline;
+  }
+  .trading_photos img:nth-child(4) {
+    display: inline;
+  }
+}
+
+.trading_button {
+  color: white;
+  background: #212a4a;
+  font-family: "Roboto Slab";
+  padding: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  text-align: center;
+}
+
+.trading_button:hover {
+  background: #314070;
+}
+
+@media only screen and (max-width: 480px) {
+  .trading_button {
+    width: 100%;
   }
 }
 
@@ -328,6 +549,22 @@
   padding: 40px;
 }
 
+@media only screen and (max-width: 768px) {
+  #testimonials {
+    width: 100%;
+    padding: 10px;
+    height: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #testimonials {
+    height: 175px;
+  }
+}
+
 .testimonial {
   position: absolute;
   opacity: 0;
@@ -336,22 +573,33 @@
   transition: opacity 1s;
 }
 
-.testimonial h2 {
-  margin-bottom: 20px;
-}
-
 .showing {
   opacity: 1;
   z-index: 2;
 }
 
-.testimonials h2 {
-  font-size: 2rem;
+.testimonial h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
   text-align: center;
 }
 
-.testimonials p {
-  margin-top: 30px;
+@media only screen and (max-width: 768px) {
+  .testimonial h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .testimonial h2 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .testimonial p {
+    font-size: 0.8rem;
+  }
 }
 
 .form {
@@ -387,14 +635,28 @@ input[name="email"] {
   padding: 5px;
 }
 
+@media only screen and (max-width: 480px) {
+  input[name="name"],
+  input[name="phone"],
+  input[name="email"] {
+    width: 100%;
+  }
+}
+
 .form textarea {
-  width: 800px;
+  width: 600px;
   padding: 5px;
 }
 
 @media only screen and (max-width: 1200px) {
   .form textarea {
     width: 95%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .form textarea {
+    width: 100%;
   }
 }
 

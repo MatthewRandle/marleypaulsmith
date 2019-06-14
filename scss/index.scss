@@ -65,6 +65,11 @@
     @include desktop-down() {
         width: 100%;
     }
+
+    @include tablet-down() {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
 }
 
 .whatWeDo h2 {
@@ -84,6 +89,14 @@
     @include desktop-down() {
         transform: translateX(-200px);
     }
+
+    @include tablet-down() {
+        transform: translateX(-125px);
+    }
+
+    @include phone-down() {
+        transform: translateX(-100px);
+    }
 }
 
 .triangle {
@@ -93,6 +106,12 @@
 	border-right: 150px solid transparent;
 	border-bottom: 100px solid $blue;
     position: relative;
+
+    @include phone-down() {
+        border-left: 75px solid transparent;
+        border-right: 75px solid transparent;
+        border-bottom: 50px solid $blue;
+    }
 }
 
 .triangle p {
@@ -104,6 +123,12 @@
     color: white;
     font-family: "Roboto Slab";
     font-size: 0.9rem;
+
+    @include phone-down() {
+        font-size: 0.6rem;
+        transform: translateX(-20%);
+        top: 35px;
+    }
 }
 
 .line {
@@ -113,18 +138,31 @@
     position: absolute;
     top: 0;
     left: 50%;
+
+    @include phone-down() {
+        width: 200px;
+    }
 }
 
 .chimney {
     position: absolute;
     top: -20px;
     right: 0;
+
+    @include phone-down() {
+        top: -10px;
+    }
 }
 
 .chimney_square {
     width: 30px;
     height: 30px;
     background: $blue;
+
+    @include phone-down() {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .chimney_triangle {
@@ -133,6 +171,11 @@
 	border-left: 30px solid transparent;
 	border-right: 0px solid transparent;
 	border-top: 20px solid $blue;
+
+    @include phone-down() {
+        border-left: 20px solid transparent;
+        border-top: 10px solid $blue;
+    }
 }
 
 .banner_container {
@@ -141,6 +184,10 @@
     width: 100%;
     display: flex;
     justify-content: center;
+
+    @include phone-down() {
+        height: 85px;
+    }
 }
 
 .banner {
@@ -155,6 +202,14 @@
     @include desktop-down() {
         width: 70%;
     }
+
+    @include tablet-down() {
+        width: 85%;
+    }
+
+    @include phone-down() {
+        width: 95%;
+    }
 }
 
 .banner_item {
@@ -163,12 +218,34 @@
     align-items: center;
 }
 
+.banner_item img {
+    width: 100px;
+
+    @include tablet-down() {
+        width: 75px;  
+        margin-bottom: 5px;
+    }
+
+    @include phone-down() {
+        width: 60px;
+        margin-bottom: 2px;
+    }
+}
+
 .banner_item p {
     margin-top: 10px;
+
+    @include phone-down() {
+        font-size: 0.6rem;
+    }
 }
 
 .banner_item h2 {
     font-size: 2.5rem;
+
+    @include phone-down() {
+        font-size: 2rem;
+    }
 }
 
 .roofing_photos {
@@ -176,6 +253,15 @@
     justify-content: space-between;
     margin-top: 140px;
     width: 100%;
+
+    @include tablet-down() {
+        margin-top: 100px;
+    }
+
+    @include phone-down() {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .roofing_photos img {
@@ -186,11 +272,25 @@
     @include desktop-down() {
         width: 27vw;
     }
+
+    @include phone-down() {
+        width: 100%;
+        height: 113.333vw;
+        margin-bottom: 40px;
+    }
 }
 
 .roofing_para {
     margin-top: 75px;
     line-height: 1.3em;
+
+    @include tablet-down() {
+        margin-top: 50px;
+    }
+
+    @include phone-down() {
+        margin-top: 20px;
+    }
 }
 
 .trading_counter {
@@ -200,6 +300,15 @@
     margin-top: 140px;
     margin-bottom: 100px;
     width: 100%;
+
+    @include tablet-down() {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    @include phone-down() {
+        margin-bottom: 50px;
+    }
 }
 
 .trading_header {    
@@ -212,6 +321,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include phone-down() {
+        justify-content: center;
+    }
 }
 
 .trading_photos img {
@@ -222,6 +335,56 @@
 
     @include desktop-down() {
         width: 25vw;
+    }
+
+    @include tablet-down() {
+        width: 43vw;
+    }
+
+    &:last-child {
+        @include tablet-down() {
+            display: none;
+        }
+    }
+
+    @include phone-down() {
+        width: 100%;
+        height: 68vw;
+        display: none;
+
+        &:nth-child(1) {
+            display: inline;
+        }
+
+        &:nth-child(2) {
+            display: inline;
+        }
+
+        &:nth-child(3) {
+            display: inline;
+        }
+
+        &:nth-child(4) {
+            display: inline;
+        }
+    }
+}
+
+.trading_button {
+    color: white;
+    background: $darkBlue;
+    font-family: "Roboto Slab";
+    padding: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: center;
+
+    &:hover {
+        background: $blue;      
+    }
+
+    @include phone-down() {
+        width: 100%;
     }
 }
 
@@ -241,6 +404,18 @@
     box-shadow: 0 2px 5px rgba(154,160,185,.05), 0 7px 20px rgba(166,173,201,.2);
     list-style-type: none;
     padding: 40px;
+
+    @include tablet-down() {
+        width: 100%;
+        padding: 10px;
+        height: 200px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    @include phone-down() {
+        height: 175px;
+    }
 }
 
 .testimonial {
@@ -250,22 +425,29 @@
     transition: opacity 1s;
 }
 
-.testimonial h2 {
-    margin-bottom: 20px;
-}
-
 .showing{
     opacity: 1;
     z-index: 2;
 }
 
-.testimonials h2 {
-    font-size: 2rem;
+.testimonial h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
     text-align: center;    
+
+    @include tablet-down() {
+        font-size: 1.3rem;
+    }
+
+    @include phone-down() {
+        font-size: 1rem;
+    }
 }
 
-.testimonials p {
-    margin-top: 30px;
+.testimonial p {
+    @include phone-down() {
+        font-size: 0.8rem;
+    }
 }
 
 .form {
@@ -274,9 +456,7 @@
     flex-direction: column;
     align-items: flex-start;
     font-family: "Roboto Slab";
-    color: $darkBlue;
-
-    
+    color: $darkBlue;    
 }
 
 .form label {
@@ -294,14 +474,22 @@ input[name="phone"],
 input[name="email"] {
     width: 350px;
     padding: 5px;
+
+    @include phone-down() {
+        width: 100%;
+    }
 }
 
 .form textarea {
-    width: 800px;
+    width: 600px;
     padding: 5px;
 
     @include desktop-down() {
         width: 95%;
+    }
+
+    @include phone-down() {
+        width: 100%;
     }
 }
 

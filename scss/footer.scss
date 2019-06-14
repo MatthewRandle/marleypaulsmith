@@ -5,6 +5,10 @@
     display: flex;
     justify-content: center;
     margin-top: 140px;
+
+    @include tablet-down() {
+        margin-top: 100px;
+    }
 }
 
 footer {
@@ -13,6 +17,8 @@ footer {
     justify-content: space-between;
     height: 125px;
     width: 1000px;    
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 footer img {
@@ -21,6 +27,10 @@ footer img {
 
 .facebook_logo {
     width: 75px;
+
+    @include phone-down() {
+        width: 50px;
+    }
 }
 
 footer a {
@@ -28,4 +38,24 @@ footer a {
     font-family: "Roboto Slab";
     color: white;
     font-size: 0.8rem;
+
+    @include phone-down() {
+        font-size: 0.6rem;
+        margin-left: 10px;
+    }
+}
+
+.footer_links {
+    display: flex;
+    align-items: center;
+
+    @include tablet-down() {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        height: 80%;
+    }
+
+    @include phone-down() {
+        height: 60%;
+    }
 }
