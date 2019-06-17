@@ -1,16 +1,20 @@
 .jumbotron_container {
   background-image: url("../images/jumbotron.jpg");
-  border-bottom: 1px solid gray;
   height: 550px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.2);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -33,17 +37,30 @@
 
 .jumbotron_container p {
   cursor: pointer;
-  background-color: rgba(33, 42, 74, 0.75);
+  background-color: #314070;
   padding: 20px;
   padding-left: 35px;
   padding-right: 35px;
   font-size: 1.5rem;
   font-family: "Roboto Slab";
   color: white;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
 }
 
 .jumbotron_container p:hover {
   background-color: #212a4a;
+}
+
+.jumbotron_container .navbar a {
+  color: #314070;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .jumbotron_container .navbar_logo {
+    padding: 0;
+  }
 }
 
 .content_container {

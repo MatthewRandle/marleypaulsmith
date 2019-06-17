@@ -2,11 +2,12 @@
 
 .jumbotron_container {
     background-image: url("../images/jumbotron.jpg");
-    border-bottom: 1px solid gray;
     height: 550px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid rgba(gray, 0.2);
 
     @include desktop-down() {
         height: 400px;
@@ -23,16 +24,28 @@
 
 .jumbotron_container p {
     cursor: pointer;
-    background-color: rgba($darkBlue, 0.75);
+    background-color: $blue;
     padding: 20px;
     padding-left: 35px;
     padding-right: 35px;
     font-size: 1.5rem;
     font-family: "Roboto Slab";
     color: white;
+    transform: translateY(5px);
 
     &:hover {
         background-color: $darkBlue;
+    }
+}
+
+.jumbotron_container .navbar a {
+    color: $blue;
+    font-weight: bold;
+}
+
+.jumbotron_container .navbar_logo {
+    @include tablet-down() {
+        padding: 0;
     }
 }
 
