@@ -3,7 +3,7 @@
     $email = $_POST["email"];
     $message = $_POST["message"];
     $subject = "New message from $name, $email";
-    $to="randle.matthew@hotmail.co.uk";
+    $to="info@paulsmithroofing.co.uk";
     $headers="MIME_VERSION: 1.0 \r\n Content-type:text/html;charset=UTF-8";
 ?>
 
