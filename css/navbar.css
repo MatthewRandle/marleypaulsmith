@@ -67,6 +67,12 @@
   font-family: "Roboto Slab";
 }
 
+@media only screen and (max-width: 480px) {
+  .topBar p {
+    font-size: 0.4rem;
+  }
+}
+
 .topBar,
 .navbar {
   padding-right: 20px;
