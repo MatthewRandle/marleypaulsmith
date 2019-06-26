@@ -1,0 +1,39 @@
+.content_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
+.content {
+  width: 1000px;
+  font-family: "Roboto Slab";
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #212a4a;
+}
+
+h2 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  color: #212a4a;
+}
+
+h3 {
+  margin-bottom: 10px;
+  color: #212a4a;
+}
+
+p {
+  margin-top: 15px;
+}
+
+ol {
+  margin-top: 30px;
+}
+/*# sourceMappingURL=Privacy.css.map */

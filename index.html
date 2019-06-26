@@ -53,7 +53,6 @@
         <div class="content_container">
             <div class="content">
                 <div class="whatWeDo" data-aos="fade-up" data-aos-once="true">
-
                     <p>Welcome to Marley Paul Smith Roofing Services Limited. We are specialists in carrying out roofing works to domestic and commercial properties
                     throughout the North East of England.</p>
                 </div>
@@ -139,20 +138,40 @@
                     </div>
                 </div>
         
-                <form action="sendMessage.php" method="POST" class="form">
-                    <h2 data-aos="fade-up" data-aos-once="true">Get in contact with us</h2>
+                <form action="sendMessage.php" method="POST" class="form" data-aos="fade-up" data-aos-once="true">
+                    <h2>Get in contact for a free no obligation quotation</h2>
         
-                    <label for="name" data-aos="fade-up" data-aos-once="true">Name</label>
-                    <input type="text" name="name" required data-aos="fade-up" data-aos-once="true">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required>
         
-                    <label for="email" data-aos="fade-up" data-aos-once="true">Email</label>
-                    <input type="email" name="email" required data-aos="fade-up" data-aos-once="true">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" required>
         
-                    <label for="message" data-aos="fade-up" data-aos-once="true">Your Message</label>
-                    <textarea type="text" name="message" rows="8" required data-aos="fade-up" data-aos-once="true"></textarea>
+                    <label for="message">Your Message</label>
+                    <textarea type="text" name="message" rows="8" required></textarea>
+
+                    <div style="display: flex; align-items: center; font-size: 0.7rem; margin-top: 10px;">
+                        <input type="checkbox" name="checkbox" required style="margin-right: 10px;">
+                        <label for="checkbox" style="margin: 0;">
+                            Allow us to store your Name/Email and agree to our <a href="./privacy-policy.html">Privacy Policy</a>
+                            and <a href="./terms-and-conditions.html">Terms & Conditions</a>
+                        </label>
+                    </div>
         
-                    <button type="submit" name="submit" data-aos="fade-up" data-aos-once="true">Send Message</button>
+                    <button type="submit" name="submit">Send Message</button>
                 </form>
+
+                <div class="business_hours" data-aos="fade-up" data-aos-once="true">
+                    <h2>Business Hours</h2>
+                    <ul>
+                        <li>Monday: 0700 - 1700</li>
+                        <li>Tuesday: 0700 - 1700</li>
+                        <li>Wednesday: 0700 - 1700</li>
+                        <li>Thursday: 0700 - 1700</li>
+                        <li>Friday: 0700 - 1600</li>
+                        <li>Saturday: 0700 - 1100</li>
+                    </ul>
+                </div>
 
                 <iframe
                     data-aos="fade-up" data-aos-once="true" 
@@ -168,10 +187,12 @@
             <footer>
                 <img src="images/logo.png" alt="Logo" />
                 <div class="footer_links">                    
-                    <div>
+                    <div class="footer_links_text">
                         <a rel="noopener noreferrer" href="./index.html">Home</a>
                         <a rel="noopener noreferrer" href="./supplies.html">Supplies</a>
                         <a rel="noopener noreferrer" href="./gallery.html">Gallery</a>
+                        <a rel="noopener noreferrer" href="./privacy-policy.html">Privacy Policy</a>
+                        <a rel="noopener noreferrer" href="./terms-and-conditions.html">Terms & Conditions</a>
                     </div>
                     <a href="https://www.facebook.com/marleypaulsmithroofing/?epa=SEARCH_BOX" rel="noopener noreferrer" target="_blank">
                         <img class="facebook_logo" src="images/f_logo_RGB-White_250.png" alt="Facebook Logo">

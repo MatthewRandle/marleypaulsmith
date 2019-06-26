@@ -35,8 +35,20 @@ footer img {
   width: 130px;
 }
 
+@media only screen and (max-width: 480px) {
+  footer img {
+    width: 100px;
+  }
+}
+
 .facebook_logo {
   width: 75px;
+}
+
+@media only screen and (max-width: 768px) {
+  .facebook_logo {
+    width: 60px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -66,6 +78,9 @@ footer a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 @media only screen and (max-width: 768px) {
@@ -84,6 +99,38 @@ footer a {
 @media only screen and (max-width: 480px) {
   .footer_links {
     height: 60%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer_links_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer_links_text {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer_links_text a {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer_links_text a {
+    margin-top: 5px;
   }
 }
 /*# sourceMappingURL=footer.css.map */

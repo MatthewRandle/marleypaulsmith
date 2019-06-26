@@ -702,6 +702,24 @@ iframe {
 
 #find_us {
   font-family: "Roboto Slab";
+  margin-top: 40px;
+}
+
+.business_hours {
+  width: 100%;
+  margin-top: 100px;
+  font-family: "Roboto Slab";
+}
+
+.business_hours h2 {
+  color: #212a4a;
+}
+
+.business_hours ul {
   margin-top: 20px;
+}
+
+.business_hours li {
+  margin-top: 10px;
 }
 /*# sourceMappingURL=index.css.map */

@@ -23,10 +23,18 @@ footer {
 
 footer img {
     width: 130px;
+
+    @include phone-down() {
+        width: 100px;
+    }
 }
 
 .facebook_logo {
     width: 75px;
+
+    @include tablet-down() {
+        width: 60px;
+    }
 
     @include phone-down() {
         width: 50px;
@@ -48,6 +56,7 @@ footer a {
 .footer_links {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 
     @include tablet-down() {
         flex-direction: column-reverse;
@@ -57,5 +66,28 @@ footer a {
 
     @include phone-down() {
         height: 60%;
+    }
+}
+
+.footer_links_text {
+    @include desktop-down() {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 55%;
+    }
+
+    @include tablet-down() {
+        width: 100%;
+    }
+}
+
+.footer_links_text a {
+    @include desktop-down() {
+        margin-top: 10px;
+    }
+
+    @include tablet-down() {
+        margin-top: 5px;
     }
 }
