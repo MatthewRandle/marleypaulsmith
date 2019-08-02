@@ -88,15 +88,15 @@
     transform: translateX(-300px);
 
     @include desktop-down() {
-        transform: translateX(-200px);
+        transform: translateX(-30vw);
     }
 
     @include tablet-down() {
-        transform: translateX(-125px);
+        transform: translateX(-20vw);
     }
 
     @include phone-down() {
-        transform: translateX(-100px);
+        transform: translateX(-30vw);
     }
 }
 
@@ -186,8 +186,8 @@
     display: flex;
     justify-content: center;
 
-    @include phone-down() {
-        height: 85px;
+    @include tablet-down() {
+        height: auto;
     }
 }
 
@@ -201,11 +201,14 @@
     font-size: 0.75rem;
 
     @include desktop-down() {
-        width: 70%;
+        width: 90%;
     }
 
     @include tablet-down() {
-        width: 85%;
+        width: 95%;
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
 
     @include phone-down() {
@@ -217,10 +220,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include tablet-down() {
+        width: 50%;
+    }
 }
 
 .banner_item img {
-    width: 100px;
+    height: 50px;
 
     @include tablet-down() {
         width: 75px;  
@@ -235,6 +242,10 @@
 
 .banner_item p {
     margin-top: 10px;
+
+    @include tablet-down() {
+        margin-top: 0;
+    }
 
     @include phone-down() {
         font-size: 0.6rem;
@@ -285,6 +296,7 @@
     margin-top: 75px;
     line-height: 1.3em;
     font-family: "Roboto Slab";
+    width: 100%;
 
     @include tablet-down() {
         margin-top: 50px;
@@ -299,8 +311,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 140px;
-    
+    margin-top: 140px;    
     width: 100%;
 
     @include tablet-down() {
@@ -313,6 +324,7 @@
     margin-top: 10px;
     line-height: 1.3em;
     font-family: "Roboto Slab";
+    width: 100%;
 
     @include tablet-down() {
         margin-bottom: 75px;
@@ -333,6 +345,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
 
     @include phone-down() {
         justify-content: center;
@@ -407,12 +420,8 @@
     height: 300px;
     background: rgba(black, $alpha: 0.005);
     font-family: "Roboto Slab";
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
     color: $darkBlue;
+    position: relative;
     box-shadow: 0 2px 5px rgba(154,160,185,.05), 0 7px 20px rgba(166,173,201,.2);
     list-style-type: none;
     padding: 40px;
@@ -431,10 +440,19 @@
 }
 
 .testimonial {
-    position: absolute;    
+    position: absolute;        
     opacity: 0;
     z-index: 1;
-    transition: opacity 1s;
+    transition: opacity 1s;   
+    top: 50%;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
 }
 
 .showing{
@@ -445,7 +463,7 @@
 .testimonial h2 {
     margin-bottom: 20px;
     font-size: 1.5rem;
-    text-align: center;    
+    text-align: center;
 
     @include tablet-down() {
         font-size: 1.3rem;

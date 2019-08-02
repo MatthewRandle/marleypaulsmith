@@ -42,13 +42,19 @@ footer img {
 }
 
 footer a {
-    margin-left: 30px;
     font-family: "Roboto Slab";
     color: white;
     font-size: 0.8rem;
 
     @include phone-down() {
         font-size: 0.6rem;
+    }
+}
+
+.facebook_a {
+    margin-left: 30px;
+
+    @include phone-down() {
         margin-left: 10px;
     }
 }
