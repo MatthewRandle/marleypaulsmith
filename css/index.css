@@ -1,6 +1,8 @@
 .jumbotron_container {
   background-image: url("../images/jumbotron.jpg");
-  height: 550px;
+  background-size: 100%;
+  background-position-y: -150px;
+  height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,42 +16,30 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 2px solid rgba(128, 128, 128, 0.2);
+  border-bottom: 2px solid rgba(33, 42, 74, 0.5);
 }
 
 @media only screen and (max-width: 1200px) {
   .jumbotron_container {
     height: 400px;
+    background-size: 120%;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .jumbotron_container {
     height: 350px;
+    background-size: 200%;
+    background-position-x: -50vw;
+    background-position-y: -23vw;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .jumbotron_container {
     height: 300px;
+    background-position-y: -15vw;
   }
-}
-
-.jumbotron_container p {
-  cursor: pointer;
-  background-color: #314070;
-  padding: 20px;
-  padding-left: 35px;
-  padding-right: 35px;
-  font-size: 1.5rem;
-  font-family: "Roboto Slab";
-  color: white;
-  -webkit-transform: translateY(5px);
-          transform: translateY(5px);
-}
-
-.jumbotron_container p:hover {
-  background-color: #212a4a;
 }
 
 .jumbotron_container .navbar a {

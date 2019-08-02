@@ -2,39 +2,30 @@
 
 .jumbotron_container {
     background-image: url("../images/jumbotron.jpg");
-    height: 550px;
+    background-size: 100%;
+    background-position-y: -150px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid rgba(gray, 0.2);
+    border-bottom: 2px solid rgba($darkBlue, 0.5);
 
     @include desktop-down() {
         height: 400px;
+        background-size: 120%;
     }
 
     @include tablet-down() {
         height: 350px;
+        background-size: 200%;
+        background-position-x: -50vw;
+        background-position-y: -23vw;
     }
 
     @include phone-down() {
         height: 300px;
-    }
-}
-
-.jumbotron_container p {
-    cursor: pointer;
-    background-color: $blue;
-    padding: 20px;
-    padding-left: 35px;
-    padding-right: 35px;
-    font-size: 1.5rem;
-    font-family: "Roboto Slab";
-    color: white;
-    transform: translateY(5px);
-
-    &:hover {
-        background-color: $darkBlue;
+        background-position-y: -15vw;
     }
 }
 
@@ -314,9 +305,7 @@
 
     @include tablet-down() {
         margin-top: 100px;
-    }
-
-    
+    }    
 }
 
 .supplies_para {
