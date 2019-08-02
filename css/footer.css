@@ -69,12 +69,14 @@ footer a {
   }
 }
 
-.facebook_a {
+.facebook_a,
+.footer_links_text a {
   margin-left: 30px;
 }
 
 @media only screen and (max-width: 480px) {
-  .facebook_a {
+  .facebook_a,
+  .footer_links_text a {
     margin-left: 10px;
   }
 }
