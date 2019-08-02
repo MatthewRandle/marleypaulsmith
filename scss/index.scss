@@ -85,14 +85,11 @@
     }
 }
 
-.whatWeDo h2 {
-    color: $darkBlue;
-    font-family: "Roboto Slab";
-    margin-bottom: 10px;
-}
-
-.whatWeDo p {
+.whatWeDo h1 {
     line-height: 1.3em;
+    font-family: "Roboto Slab";
+    font-weight: normal;
+    font-size: 1rem;
 }
 
 .banner_logo {
@@ -296,6 +293,7 @@
 .roofing_para {
     margin-top: 75px;
     line-height: 1.3em;
+    font-family: "Roboto Slab";
 
     @include tablet-down() {
         margin-top: 50px;
@@ -311,12 +309,24 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 140px;
-    margin-bottom: 100px;
+    
     width: 100%;
 
     @include tablet-down() {
         margin-top: 100px;
-        margin-bottom: 100px;
+    }
+
+    
+}
+
+.supplies_para {
+    margin-bottom: 100px;
+    margin-top: 10px;
+    line-height: 1.3em;
+    font-family: "Roboto Slab";
+
+    @include tablet-down() {
+        margin-bottom: 75px;
     }
 
     @include phone-down() {
