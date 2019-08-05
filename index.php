@@ -24,13 +24,13 @@
     </head>
 
     <body>
-        <div class="topBar_container">
+        <!-- <div class="topBar_container">
             <div class="topBar">
                 <p><i class="fas fa-phone-alt" style="padding-right: 5px; margin-left: 15px;"></i> 01670 828688</p>
                 <p><i class="far fa-envelope" style="padding-right: 5px; margin-left: 15px;"></i> info@paulsmithroofing.co.uk</p>
                 <p><i class="fas fa-map-marker" style="margin-right: 5px;"></i> Errington House, Blyth, NE24 4TW</p>
             </div>
-        </div>
+        </div> -->
         
         <div class="navbar_container">
             <div class="navbar">
