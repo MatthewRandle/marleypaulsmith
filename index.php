@@ -196,6 +196,8 @@
                 </div>
 
             <iframe 
+                data-aos="fade-up" 
+                data-aos-once="true"
                 frameborder="0" 
                 scrolling="no"
                 src="https://www.openstreetmap.org/export/embed.html?bbox=-1.5631511807441711%2C55.12568467458752%2C-1.5602543950080874%2C55.1271017222017&amp;layer=mapnik">
