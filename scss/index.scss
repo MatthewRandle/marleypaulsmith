@@ -510,6 +510,18 @@ input[name="email"] {
     }
 }
 
+.contact_error {
+    width: 100%;
+    margin-top: 20px;
+    font-family: "Roboto Slab";
+    line-height: 1.3em;
+    font-size: 0.7rem;
+}
+
+.contact_error span {
+    color: $blue;
+}
+
 .form textarea {
     width: 600px;
     padding: 5px;

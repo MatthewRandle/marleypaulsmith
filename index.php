@@ -1,3 +1,10 @@
+<?php
+    ini_set("session.save_path", "/var/lib/php/sessions");
+    session_start();
+    header('X-Frame-Options: DENY');
+    header("X-XSS-Protection: 1; mode=block");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -27,9 +34,9 @@
         
         <div class="navbar_container">
             <div class="navbar">
-                <a class="navbar_logo" href="/index.html" rel="noopener noreferrer"><img src="images/logo.png" alt="Logo" /></a>
+                <a class="navbar_logo" href="/index.php" rel="noopener noreferrer"><img src="images/logo.png" alt="Logo" /></a>
                 <div style="display: flex;">
-                    <a href="./index.html" rel="noopener noreferrer">Home</a>
+                    <a href="./index.php" rel="noopener noreferrer">Home</a>
                     <a href="./supplies" rel="noopener noreferrer">Supplies</a>
                     <a href="./gallery" rel="noopener noreferrer">Gallery</a>
                 </div>
@@ -38,10 +45,10 @@
         
         <div class="jumbotron_container">
             <div class="navbar">
-                <a class="navbar_logo" href="/index.html" rel="noopener noreferrer"><img src="images/logo_blue.png"
+                <a class="navbar_logo" href="/index.php" rel="noopener noreferrer"><img src="images/logo_blue.png"
                         alt="Logo" /></a>
                 <div style="display: flex;">
-                    <a href="./index.html" rel="noopener noreferrer">Home</a>
+                    <a href="./index.php" rel="noopener noreferrer">Home</a>
                     <a href="./supplies" rel="noopener noreferrer">Supplies</a>
                     <a href="./gallery" rel="noopener noreferrer">Gallery</a>
                 </div>
@@ -142,14 +149,9 @@
                         <h2>"Excellent service, reasonably priced"</h2>
                         <p>Mary Taylor, 23rd November 2018</p>
                     </div>
-        
-                    <div class="testimonial" style="text-align: center;">
-                        <h2>"Excellent service, priced well Excellent service, priced well Excellent service, priced well"</h2>
-                        <p>Test, 23rd November 2018</p>
-                    </div>
                 </div>
         
-                <form action="sendMessage.php" method="POST" class="form" data-aos="fade-up" data-aos-once="true">
+                <form action="sendMessage.php" method="POST" class="form" data-aos="fade-up" data-aos-once="true" id="form">
                     <h2>Get in contact for a free no obligation quotation</h2>
         
                     <label for="name">Name</label>
@@ -164,23 +166,32 @@
                     <div style="display: flex; align-items: center; font-size: 0.7rem; margin-top: 10px;">
                         <input type="checkbox" name="checkbox" required style="margin-right: 10px;">
                         <label for="checkbox" style="margin: 0;">
-                            Allow us to store your Name/Email and agree to our <a href="./privacy-policy.html">Privacy Policy</a>
-                            and <a href="./terms-and-conditions.html">Terms & Conditions</a>
+                            Allow us to store your Name/Email and agree to our <a href="./privacy-policy.php">Privacy Policy</a>
+                            and <a href="./terms-and-conditions.php">Terms & Conditions</a>
                         </label>
                     </div>
         
                     <button type="submit" name="submit">Send Message</button>
+
+                    <?php
+                        if(isset($_SESSION["contactError"])) {
+                            if($_SESSION["contactError"] == true) {
+                                echo "<p class='contact_error'>There was a problem sending the email, please try again. If the problem persists you can email directly to <span>info@paulsmithroofing.co.uk</span>. Sorry for the inconvenience.</p>";
+                                unset($_SESSION['contactError']);
+                            }
+                        }
+                    ?>
                 </form>
 
                 <div class="business_hours" data-aos="fade-up" data-aos-once="true">
                     <h2>Business Hours</h2>
                     <ul>
-                        <li>Monday: 0700 - 1700</li>
-                        <li>Tuesday: 0700 - 1700</li>
-                        <li>Wednesday: 0700 - 1700</li>
-                        <li>Thursday: 0700 - 1700</li>
-                        <li>Friday: 0700 - 1600</li>
-                        <li>Saturday: 0700 - 1100</li>
+                        <li>Monday: 07:00 - 17:00</li>
+                        <li>Tuesday: 07:00 - 17:00</li>
+                        <li>Wednesday: 07:00 - 17:00</li>
+                        <li>Thursday: 07:00 - 17:00</li>
+                        <li>Friday: 07:00 - 16:00</li>
+                        <li>Saturday: 07:00 - 10:30</li>
                     </ul>
                 </div>
 
@@ -188,7 +199,7 @@
                     data-aos="fade-up" data-aos-once="true" 
                     frameborder="0" 
                     scrolling="no" 
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=-1.5657395124435427%2C55.12489178076784%2C-1.5567809343338015%2C55.12781789488481&amp;layer=mapnik&amp;marker=55.126354864629306%2C-1.5612602233886719">
+                    src="https://www.openstreetmap.org/export/embed.php?bbox=-1.5657395124435427%2C55.12489178076784%2C-1.5567809343338015%2C55.12781789488481&amp;layer=mapnik&amp;marker=55.126354864629306%2C-1.5612602233886719">
                 </iframe>
                 <p id="find_us" data-aos="fade-up" data-aos-once="true">Find us at Unit 1, Errington House, Errington St, Blyth, NE24 4TW</p>
             </div>
@@ -196,10 +207,10 @@
 
         <div class="footer_container">
             <footer>
-                <a href="./index.html"><img src="images/logo.png" alt="Logo" /></a>
+                <a href="./index.php"><img src="images/logo.png" alt="Logo" /></a>
                 <div class="footer_links">                    
                     <div class="footer_links_text">
-                        <a rel="noopener noreferrer" href="./index.html">Home</a>
+                        <a rel="noopener noreferrer" href="./index.php">Home</a>
                         <a rel="noopener noreferrer" href="./supplies">Supplies</a>
                         <a rel="noopener noreferrer" href="./gallery">Gallery</a>
                         <a rel="noopener noreferrer" href="./privacy-policy">Privacy Policy</a>
