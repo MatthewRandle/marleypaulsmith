@@ -3,7 +3,7 @@
     header("X-XSS-Protection: 1; mode=block");
 ?>
 
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
