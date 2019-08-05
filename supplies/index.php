@@ -33,10 +33,10 @@
             </div>
         
             <div class="navbar">
-                <a class="navbar_logo" href="../index.php" rel="noopener noreferrer"><img src="../images/logo.png"
+                <a class="navbar_logo" href="../" rel="noopener noreferrer"><img src="../images/logo.png"
                         alt="Logo" /></a>
                 <div style="display: flex;">
-                    <a href="../index.php" rel="noopener noreferrer">Home</a>
+                    <a href="../" rel="noopener noreferrer">Home</a>
                     <a href="../supplies" rel="noopener noreferrer">Supplies</a>
                     <a href="../gallery" rel="noopener noreferrer">Gallery</a>
                 </div>
@@ -45,10 +45,10 @@
         
         <div class="navbar_container">
             <div class="navbar">
-                <a class="navbar_logo" href="../index.php" rel="noopener noreferrer"><img src="../images/logo.png"
+                <a class="navbar_logo" href="../" rel="noopener noreferrer"><img src="../images/logo.png"
                         alt="Logo" /></a>
                 <div style="display: flex;">
-                    <a href="../index.php" rel="noopener noreferrer">Home</a>
+                    <a href="../" rel="noopener noreferrer">Home</a>
                     <a href="../supplies" rel="noopener noreferrer">Supplies</a>
                     <a href="../gallery" rel="noopener noreferrer">Gallery</a>
                 </div>
@@ -620,10 +620,10 @@
 
         <div class="footer_container">
             <footer>
-                <a href="../index.php"><img src="../images/logo.png" alt="Logo" /></a>
+                <a href="../"><img src="../images/logo.png" alt="Logo" /></a>
                 <div class="footer_links">
                     <div class="footer_links_text">
-                        <a rel="noopener noreferrer" href="../index.php">Home</a>
+                        <a rel="noopener noreferrer" href="../">Home</a>
                         <a rel="noopener noreferrer" href="../supplies">Supplies</a>
                         <a rel="noopener noreferrer" href="../gallery">Gallery</a>
                         <a rel="noopener noreferrer" href="../privacy-policy">Privacy Policy</a>
