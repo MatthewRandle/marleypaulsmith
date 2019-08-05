@@ -195,11 +195,10 @@
                     </ul>
                 </div>
 
-                <iframe
-                    data-aos="fade-up" data-aos-once="true" 
-                    frameborder="0" 
-                    scrolling="no" 
-                    src="https://www.openstreetmap.org/export/embed.php?bbox=-1.5657395124435427%2C55.12489178076784%2C-1.5567809343338015%2C55.12781789488481&amp;layer=mapnik&amp;marker=55.126354864629306%2C-1.5612602233886719">
+            <iframe 
+                frameborder="0" 
+                scrolling="no"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-1.5631511807441711%2C55.12568467458752%2C-1.5602543950080874%2C55.1271017222017&amp;layer=mapnik">
                 </iframe>
                 <p id="find_us" data-aos="fade-up" data-aos-once="true">Find us at Unit 1, Errington House, Errington St, Blyth, NE24 4TW</p>
             </div>
