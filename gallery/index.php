@@ -269,7 +269,7 @@
 
     <script src="./photoswipe.min.js"></script>
     <script src="./photoswipe-ui-default.min.js"></script>
-    <script src="./Gallery.js"></script>
+    <script src="./Gallery.js?ver=1"></script>
 </body>
 
 </html>
