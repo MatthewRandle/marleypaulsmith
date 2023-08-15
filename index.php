@@ -155,7 +155,7 @@
                     <h2>Get in contact for a free no obligation quotation</h2>
 
                     <label style="opacity: 0;" for="fullName">Full Name</label>
-                    <input style="opacity: 0;" type="text" name="fullName" required>
+                    <input style="opacity: 0;" type="text" name="fullName">
         
                     <label for="name">Name</label>
                     <input type="text" name="name" required>
