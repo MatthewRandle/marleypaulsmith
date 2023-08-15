@@ -11,6 +11,11 @@
             $dotenv = Dotenv\Dotenv::create("/var/www");
             $dotenv->load();
 
+            if($_POST["fullName"]) {
+                header("Location: /");
+                die();
+            }
+
             $name = $_POST["name"] ?? "No Name";
             $email = $_POST["email"] ?? "No Email";
             $message = $_POST["message"] ?? "No Message";
