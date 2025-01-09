@@ -694,6 +694,18 @@ input[name="email"] {
   color: #314070;
 }
 
+.contact_success {
+  width: 100%;
+  margin-top: 20px;
+  font-family: "Roboto Slab";
+  line-height: 1.3em;
+  font-size: 0.7rem;
+}
+
+.contact_success span {
+  color: #314070;
+}
+
 .form textarea {
   width: 600px;
   padding: 5px;
